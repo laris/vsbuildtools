@@ -6,7 +6,7 @@
     "url": "https://aka.ms/vs/17/release/vs_buildtools.exe",
     "hash": "d3db293970b59c02a510ed25e4f80086001b158bbeb651c5f1fdc49572828829",
     "installer": {
-        "script": "Start-Process -FilePath \"$dir\\vs_buildtools.exe\" -ArgumentList \"--installPath $dir\\vs\\ --add Microsoft.VisualStudio.Workload.MSBuildTools --add Microsoft.VisualStudio.Workload.VCTools --add Microsoft.VisualStudio.Component.VC.Tools.x86.x64 --quiet --norestart\" -Wait"
+        "script": "Start-Process -FilePath \"$dir\\vs_buildtools.exe\" -ArgumentList \"--installPath $dir\\vs\\ --add Microsoft.VisualStudio.Component.VC.Tools.x86.x64 --quiet --norestart\" -Wait"
     },
     "uninstaller": {
         "script": "Start-Process -FilePath \"$dir\\vs_buildtools.exe\" -ArgumentList \"uninstall --installPath $dir\\vs\\ --quiet --norestart\" -Wait"
